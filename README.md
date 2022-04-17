@@ -1,4 +1,4 @@
-# ICICB DEX SDK
+# Babylon DEX SDK
 
 Forked from the [Uniswap SDK](https://github.com/Uniswap/uniswap-v2-sdk/commit/a88048e9c4198a5bdaea00883ca00c8c8e582605).
 
@@ -11,13 +11,13 @@ To run the tests, follow these steps. You must have at least node v10 and [yarn]
 First clone the repository:
 
 ```sh
-git clone https://github.com/galaxy-foundation/icicb-dex-sdk.git
+git clone https://github.com/galaxy-foundation/Babylon-dex-sdk.git
 ```
 
-Move into the icicb-dex-sdk working directory
+Move into the Babylon-dex-sdk working directory
 
 ```sh
-cd icicb-dex-sdk/
+cd Babylon-dex-sdk/
 ```
 
 Install dependencies
