@@ -19,8 +19,8 @@ var providers = require('@ethersproject/providers');
 var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 26] = "MAINNET";
-  ChainId[ChainId["TESTNET"] = 26] = "TESTNET";
+  ChainId[ChainId["MAINNET"] = 56] = "MAINNET";
+  ChainId[ChainId["TESTNET"] = 97] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -34,8 +34,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0x71c2DC7a93533D5D87Aa7bA6285994d4E7AA6a5a';
-var INIT_CODE_HASH = '0x1d4fa8c35a50bb8d451e80981ebed524d370152756b64f8e5ad726c49bcea446';
+var FACTORY_ADDRESS = '0xcD72A77516a3a5488d78084fC3f23ff72De9cC8E';
+var INIT_CODE_HASH = '0x468b9b514b6360db16688abea55b8a4a34ac9eabdfe3c7b9aace6eb8cee49fc0';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -368,7 +368,7 @@ function Currency(decimals, symbol, name) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'ICICB', 'ICICB');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'WBNB', 'WBNB');
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -435,7 +435,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x57d68E70d4A1cfd722351BeDbDD5a331a395c90D', 18, 'WICICB', 'Wrapped ICICB', 'https://icicbchain.com'), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0x57d68E70d4A1cfd722351BeDbDD5a331a395c90D', 18, 'WICICB', 'Wrapped ICICB', 'https://icicbchain.com'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB', ''), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB', 'https://www.binance.com/ '), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
