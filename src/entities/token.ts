@@ -70,16 +70,16 @@ export const WETH = {
     ChainId.MAINNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
-    'WBNB',
-    'Wrapped BNB',
-    ''
+    'BNB',
+    'Binance Coin',
+    'https://www.binance.com/'
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.com/ '
+    'BNB',
+    'Binance Coin',
+    'https://www.binance.com/'
   )
 }
